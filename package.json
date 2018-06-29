@@ -1,11 +1,11 @@
 {
-  "name": "react-native-sortable-grid",
+  "name": "react-native-sort-grid",
   "keywords": [
     "drag-drop",
     "sortable",
     "grid"
   ],
-  "version": "2.0.1",
+  "version": "1.0.0",
   "description": "Drag-and-drop sortable grid view for React Native.",
   "main": "index.js",
   "scripts": {},
