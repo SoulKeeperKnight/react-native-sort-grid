@@ -12,10 +12,10 @@ import _ from 'lodash'
 
 // Default values
 const ITEMS_PER_ROW                   = 4
-const DRAG_ACTIVATION_TRESHOLD        = 200 // Milliseconds
+const DRAG_ACTIVATION_THRESHOLD        = 200 // Milliseconds
 const BLOCK_TRANSITION_DURATION       = 300 // Milliseconds
 const ACTIVE_BLOCK_CENTERING_DURATION = 200 // Milliseconds
-const DOUBLETAP_TRESHOLD              = 150 // Milliseconds
+const DOUBLE_TAP_THRESHOLD              = 150 // Milliseconds
 const NULL_FN                         = () => {}
 
 class Block extends Component {
@@ -58,7 +58,7 @@ class SortableGrid extends Component {
               style = { this._getBlockStyle(key) }
               onLayout = { this.saveBlockPositions(key) }
               panHandlers = { this._panResponder.panHandlers }
-              delayLongPress = { this.dragActivationTreshold }
+              delayLongPress = { this.dragActivationThreshold }
               onLongPress = { this.activateDrag(key) }
               onPress = { this.handleTap(item.props) }
               itemWrapperStyle = { this._getItemWrapperStyle(key) }
@@ -76,8 +76,8 @@ class SortableGrid extends Component {
     this.blockTransitionDuration      = BLOCK_TRANSITION_DURATION
     this.activeBlockCenteringDuration = ACTIVE_BLOCK_CENTERING_DURATION
     this.itemsPerRow                  = ITEMS_PER_ROW
-    this.dragActivationTreshold       = DRAG_ACTIVATION_TRESHOLD
-    this.doubleTapTreshold            = DOUBLETAP_TRESHOLD
+    this.dragActivationThreshold       = DRAG_ACTIVATION_THRESHOLD
+    this.doubleTapThreshold            = DOUBLE_TAP_THRESHOLD
     this.onDragRelease                = NULL_FN
     this.onDragStart                  = NULL_FN
     this.onDeleteItem                 = NULL_FN
@@ -496,7 +496,7 @@ class SortableGrid extends Component {
     this.tapTimer = setTimeout( () => {
       this.doubleTapWait = false
       onTap()
-    }, this.doubleTapTreshold)
+    }, this.doubleTapThreshold)
   }
 
   _onDoubleTap = (onDoubleTap) => {
@@ -508,7 +508,7 @@ class SortableGrid extends Component {
 
   _resetTapIgnoreTime = () => {
     clearTimeout(this.tapTimer)
-    this.tapTimer = setTimeout(() => this.tapIgnore = false, this.doubleTapTreshold)
+    this.tapTimer = setTimeout(() => this.tapIgnore = false, this.doubleTapThreshold)
   }
 
   createTouchHandlers = () =>

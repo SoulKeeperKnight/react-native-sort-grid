@@ -11,7 +11,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ollija/react-native-sortable-grid.git"
+    "url": "git+https://github.com/kagawagao/react-native-sort-grid.git"
   },
   "license": "MIT",
   "dependencies": {},
