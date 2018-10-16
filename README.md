@@ -6,6 +6,14 @@
 <p align="center">
   <img alt="Issue Stats" src="http://i.giphy.com/gcB8YYVtL2BsA.gif">
 </p>
+
+
+<h3 align="center" style="margin-bottom: 21px;">
+  Add swap function with scroll position (Customize plugin)
+</h3>
+
+
+
 <p align="center">
   <img alt="New Example" src="https://github.com/SoulKeeperKnight/react-native-sort-grid/blob/master/new%20example/screenshot.gif">
 </p>
