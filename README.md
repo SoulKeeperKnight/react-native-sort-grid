@@ -6,6 +6,9 @@
 <p align="center">
   <img alt="Issue Stats" src="http://i.giphy.com/gcB8YYVtL2BsA.gif">
 </p>
+<p align="center">
+  <img alt="New Example" src="https://github.com/SoulKeeperKnight/react-native-sort-grid/tree/master/new%20example">
+</p>
 
 # react-native-sortable-grid
 
